@@ -32,12 +32,9 @@ export const event = defineType({
     defineField({
       name: "image",
       type: "image",
+      
     }),
-    defineField({
-      name: "body",
-      type: "array",
-      of: [{ type: "block" }],
-    }),
+    
   ],
   preview: {
     select: {
