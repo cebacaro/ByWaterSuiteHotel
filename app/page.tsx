@@ -1,13 +1,18 @@
 // import Image from "next/image";
-import HeroSection from "./home/page";
+import HomePage from "./home/page";
+import Events from "./events/page";
+import OurHistory from "./ourHistory/page";
+import Rooms from "./rooms/page";
 
 export default function Home() {
   return (
-    <div className="items-center justify-items-center min-h-screen m-0">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <HeroSection />
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
-    </div>
+    <main className="font-sans  justify-center items-center h-screen w-screen">
+      <div className="flex flex-col items-center justify-center ">
+        <HomePage />
+        <OurHistory />
+        <Rooms />
+        <Events />
+      </div>
+    </main>
   );
 }
